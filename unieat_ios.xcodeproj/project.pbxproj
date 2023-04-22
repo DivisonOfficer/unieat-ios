@@ -35,6 +35,8 @@
 		58F6922129F3963800E1A785 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = 58F6922029F3963800E1A785 /* SwiftUIPager */; };
 		58F6922429F397A900E1A785 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6922329F397A900E1A785 /* ViewExtension.swift */; };
 		58F6922629F39B1B00E1A785 /* PageIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6922529F39B1B00E1A785 /* PageIndicator.swift */; };
+		58F6922829F3A3CF00E1A785 /* ShareMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6922729F3A3CF00E1A785 /* ShareMenuView.swift */; };
+		58F6922B29F3A82E00E1A785 /* ArticleThumb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6922A29F3A82E00E1A785 /* ArticleThumb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		58F6921A29F37D4500E1A785 /* HashTagBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTagBubble.swift; sourceTree = "<group>"; };
 		58F6922329F397A900E1A785 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		58F6922529F39B1B00E1A785 /* PageIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageIndicator.swift; sourceTree = "<group>"; };
+		58F6922729F3A3CF00E1A785 /* ShareMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareMenuView.swift; sourceTree = "<group>"; };
+		58F6922A29F3A82E00E1A785 /* ArticleThumb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleThumb.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,8 @@
 			isa = PBXGroup;
 			children = (
 				58F6920D29F25F1C00E1A785 /* NavigationMenu.swift */,
+				58F6922729F3A3CF00E1A785 /* ShareMenuView.swift */,
+				58F6922929F3A81E00E1A785 /* Article */,
 				58F6921629F2E32500E1A785 /* ShopInfo */,
 			);
 			path = main;
@@ -308,6 +314,14 @@
 				58F6922329F397A900E1A785 /* ViewExtension.swift */,
 			);
 			path = swiftui;
+			sourceTree = "<group>";
+		};
+		58F6922929F3A81E00E1A785 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				58F6922A29F3A82E00E1A785 /* ArticleThumb.swift */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,7 +468,9 @@
 				58F691C029EF981A00E1A785 /* ContentView.swift in Sources */,
 				58F6920829EFAADF00E1A785 /* Image.swift in Sources */,
 				58F6921129F25F6700E1A785 /* AppPage.swift in Sources */,
+				58F6922829F3A3CF00E1A785 /* ShareMenuView.swift in Sources */,
 				58F691BE29EF981A00E1A785 /* unieat_iosApp.swift in Sources */,
+				58F6922B29F3A82E00E1A785 /* ArticleThumb.swift in Sources */,
 				58F691FE29EFA01D00E1A785 /* Color.swift in Sources */,
 				58F691F829EF9C1400E1A785 /* RootProvider.swift in Sources */,
 				58F6920E29F25F1C00E1A785 /* NavigationMenu.swift in Sources */,

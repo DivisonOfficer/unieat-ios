@@ -32,11 +32,16 @@ struct ShopInfoPage: View {
                         .padding(.top,10.dp)
                     hashTags
                         .padding(.top,13.dp)
-                    
+                    articles
+                        .padding(.top,60.dp)
                   
                 }
             }
-            bottomMenus
+            ShareMenuView{
+                
+            }onClickBookmark: {
+                
+            }
         }.ignoresSafeArea(.all)
        
     }
@@ -152,27 +157,32 @@ struct ShopInfoPage: View {
     }
     
     
-    
-    
-    var bottomMenus: some View{
-        HStack{
-            Spacer()
-            Button{
-                
-            }label:{
-                Image(.icShare)
-            }
+    var articles: some View{
+        VStack(alignment: .leading){
+            Text("아티클")
+                .font(.bold, 21.sp)
             
-            Button{
-                
-            }label:{
-                Image(.icBookmark)
+            LazyVGrid(columns: [.init(.adaptive(minimum: 160.dp))], spacing:8.dp){
+                ArticleThumb(
+                    title: "차츰", tags: "#라면 #먹고 #갈래 #요", imageUrl: "https://images.unsplash.com/photo-1589476993333-f55b84301219?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+                )
+                ArticleThumb(
+                    title: "차츰", tags: "#라면 #먹고 #갈래 #요", imageUrl: "https://images.unsplash.com/photo-1589476993333-f55b84301219?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+                )
+                ArticleThumb(
+                    title: "차츰", tags: "#라면 #먹고 #갈래 #요", imageUrl: "https://images.unsplash.com/photo-1589476993333-f55b84301219?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+                )
+                ArticleThumb(
+                    title: "차츰", tags: "#라면 #먹고 #갈래 #요", imageUrl: "https://images.unsplash.com/photo-1589476993333-f55b84301219?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80"
+                )
+
             }
-        }
-        .padding(.horizontal,20.dp)
-        .padding(.top,12.dp)
-        .padding(.bottom,45.dp)
+        }.padding(.horizontal,20.dp)
     }
+    
+    
+    
+ 
 }
 
 
