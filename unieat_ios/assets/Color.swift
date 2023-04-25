@@ -16,6 +16,7 @@ enum UniColor: String{
     case red20 = "colorRed20"
     case gray59 = "colorGray59"
     case grayBD = "colorGrayBD"
+    case gray19 = "colorGray19"
     case onMain = "colorOnMain"
 }
 

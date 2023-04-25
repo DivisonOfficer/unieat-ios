@@ -14,6 +14,10 @@ enum UniImage: String{
     case icApple
     case icBookmark
     case icShare
+    case icUnieatWordLogo
+    case icBtnNextCircle
+    case icSearchBanner
+    case icWinnerTrophy
 }
 
 
