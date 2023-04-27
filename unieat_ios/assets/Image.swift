@@ -18,6 +18,7 @@ enum UniImage: String{
     case icBtnNextCircle
     case icSearchBanner
     case icWinnerTrophy
+    case icStar
 }
 
 

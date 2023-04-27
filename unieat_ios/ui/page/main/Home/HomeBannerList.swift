@@ -16,6 +16,7 @@ struct HomeBannerList: View {
             articleBanner
                 .padding(.top,24.dp)
             eventBannerList
+                .padding(.top,40.dp)
         }
     }
     
@@ -60,7 +61,8 @@ struct HomeBannerList: View {
     var eventBannerList: some View{
         VStack{
             bannerTitle(title: "우리학교 맛집 이벤트", description: "맛집이러부러"){
-                
+                Image(.icStar)
+                    .padding(.bottom,15.dp)
             }
             buttonAction:{
                 
@@ -106,9 +108,15 @@ struct HomeBannerList: View {
             
             Text(title)
                 .font(.bold,25.dp)
+            
+            Color.black.frame(height: 1.dp).padding(.trailing,20.dp)
             Text(description)
                 .font(.regular,16.dp)
                 .foregroundColor(.gray59)
+            
+            Text("이벤트 기간 : 23.12.23 ~ 24.12.12")
+                .font(.regular, 15.sp)
+                .foregroundColor(.sub)
                 
         }.padding(.horizontal, 25.dp)
     }

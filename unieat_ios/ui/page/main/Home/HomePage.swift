@@ -29,6 +29,7 @@ struct HomePage: View {
     
                         
                         mapRedirect
+                            .padding(.top,20.dp)
                          
                         HomeBannerList()
                             .id("BannerList")
