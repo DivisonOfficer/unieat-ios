@@ -40,6 +40,7 @@
 		58F6922E29F7943900E1A785 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6922D29F7943900E1A785 /* HomePage.swift */; };
 		58F6923029F7976A00E1A785 /* HomeBannerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6922F29F7976A00E1A785 /* HomeBannerList.swift */; };
 		58F6923229F79B8B00E1A785 /* ArticleThumbGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6923129F79B8B00E1A785 /* ArticleThumbGrid.swift */; };
+		58F6923529FAC4F100E1A785 /* EventItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6923429FAC4F100E1A785 /* EventItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		58F6922D29F7943900E1A785 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		58F6922F29F7976A00E1A785 /* HomeBannerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerList.swift; sourceTree = "<group>"; };
 		58F6923129F79B8B00E1A785 /* ArticleThumbGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleThumbGrid.swift; sourceTree = "<group>"; };
+		58F6923429FAC4F100E1A785 /* EventItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 		58F691F929EF9F5800E1A785 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				58F6923329FAC4E300E1A785 /* Event */,
 				58F6922C29F7941900E1A785 /* Home */,
 				58F6920D29F25F1C00E1A785 /* NavigationMenu.swift */,
 				58F6922729F3A3CF00E1A785 /* ShareMenuView.swift */,
@@ -339,6 +342,14 @@
 				58F6922F29F7976A00E1A785 /* HomeBannerList.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		58F6923329FAC4E300E1A785 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				58F6923429FAC4F100E1A785 /* EventItemView.swift */,
+			);
+			path = Event;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,6 +511,7 @@
 				58F6923029F7976A00E1A785 /* HomeBannerList.swift in Sources */,
 				58F691EE29EF98A400E1A785 /* Font.swift in Sources */,
 				58F6921529F2E22D00E1A785 /* ShopInfoViewModel.swift in Sources */,
+				58F6923529FAC4F100E1A785 /* EventItemView.swift in Sources */,
 				58F6922429F397A900E1A785 /* ViewExtension.swift in Sources */,
 				58F6921929F2E34200E1A785 /* ShopInfoComponent.swift in Sources */,
 				58F6922629F39B1B00E1A785 /* PageIndicator.swift in Sources */,
