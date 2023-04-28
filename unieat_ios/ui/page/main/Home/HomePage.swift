@@ -34,14 +34,15 @@ struct HomePage: View {
                         HomeBannerList()
                             .id("BannerList")
                             .background{
-                                Color.white
+                                FoldedBackground()
                             }
                             .padding(.top,150.dp)
                     }.frame(maxWidth: .infinity)
                         .background(
-                            GeometryReader { geometry in
-                                            Color.clear
-                                                .preference(key: ScrollOffsetPreferenceKey.self, value: geometry.frame(in: .named("scroll")).origin)
+                            GeometryReader {
+                                geometry in
+                                    Color.clear
+                                        .preference(key: ScrollOffsetPreferenceKey.self, value: geometry.frame(in: .named("scroll")).origin)
                                         })
                     .onPreferenceChange(ScrollOffsetPreferenceKey.self) { value in
                         if(appbarDark != (value.y > -100.dp)){
@@ -54,6 +55,7 @@ struct HomePage: View {
                     
                 }.background{
                     Color(appbarDark ? .main : .white)
+                    
                 }
          
                 

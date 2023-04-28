@@ -33,6 +33,7 @@ struct EventPage: View {
                     }
                 }.frame(minHeight:metric.size.height)
                 
+                
                
             }
         }

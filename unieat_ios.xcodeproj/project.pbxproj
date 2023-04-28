@@ -46,6 +46,7 @@
 		58F6923C29FB8C6500E1A785 /* SLEIGothicTTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58F6923B29FB8C3900E1A785 /* SLEIGothicTTF.ttf */; };
 		58F6923D29FB8C9600E1A785 /* SLEIGothicOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58F6923A29FB8AA300E1A785 /* SLEIGothicOTF.otf */; };
 		58F6923F29FB8E3E00E1A785 /* EventPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6923E29FB8E3E00E1A785 /* EventPageViewModel.swift */; };
+		58F6924129FB94F700E1A785 /* FoldedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924029FB94F700E1A785 /* FoldedBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		58F6923A29FB8AA300E1A785 /* SLEIGothicOTF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SLEIGothicOTF.otf; path = ../../../../../Downloads/SLEIGothicOTF.otf; sourceTree = "<group>"; };
 		58F6923B29FB8C3900E1A785 /* SLEIGothicTTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SLEIGothicTTF.ttf; path = ../../../../../Downloads/SLEIGothicTTF.ttf; sourceTree = "<group>"; };
 		58F6923E29FB8E3E00E1A785 /* EventPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPageViewModel.swift; sourceTree = "<group>"; };
+		58F6924029FB94F700E1A785 /* FoldedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldedBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,7 @@
 				58F6920B29EFAFDA00E1A785 /* LoginButton.swift */,
 				58F6921A29F37D4500E1A785 /* HashTagBubble.swift */,
 				58F6922529F39B1B00E1A785 /* PageIndicator.swift */,
+				58F6924029FB94F700E1A785 /* FoldedBackground.swift */,
 			);
 			path = sharedcomponent;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				58F6923729FB891B00E1A785 /* EventData.swift in Sources */,
 				58F691FE29EFA01D00E1A785 /* Color.swift in Sources */,
 				58F691F829EF9C1400E1A785 /* RootProvider.swift in Sources */,
+				58F6924129FB94F700E1A785 /* FoldedBackground.swift in Sources */,
 				58F6920E29F25F1C00E1A785 /* NavigationMenu.swift in Sources */,
 				58F6923929FB8A3700E1A785 /* EventPage.swift in Sources */,
 				58F6920C29EFAFDA00E1A785 /* LoginButton.swift in Sources */,
