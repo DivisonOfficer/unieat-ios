@@ -12,6 +12,7 @@ import SwiftUI
 let FONT_PRETENDARD_BOLD = "Pretendard-Bold"
 let FONT_PRETENDARD_MEDIUM = "Pretendard-Medium"
 let FONT_PRETENDARD_REGULAR = "Pretendard-Regular"
+let FONT_SLEI = "SLEIGothicTTF"
 
 
 extension Text{
@@ -29,6 +30,10 @@ extension Text{
         return self.font(.custom(font, size: size)).fontWeight(weight)
     }
     
+    func fontSL(_ weight: Font.Weight = .regular, size: CGFloat) -> some View{
+        return self.font(.custom(FONT_SLEI, size:size)).fontWeight(weight)
+    }
+    
 }
 
 
@@ -38,6 +43,9 @@ struct Font_Previews: PreviewProvider {
             Text("폰트 테스트 Font Test").font(.bold, 40.sp)
             Text("폰트 테스트 Font Test").font(.medium, 40.sp)
             Text("폰트 테스트 Font Test").font(.regular, 40.sp)
+            Text("폰트 테스트 Font Test").fontSL(size: 40.sp)
+            Text("폰트 테스트 Font Test").fontSL(.bold, size: 40.sp)
+         
         
         }
     }

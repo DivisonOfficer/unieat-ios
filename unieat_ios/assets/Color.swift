@@ -18,6 +18,7 @@ enum UniColor: String{
     case grayBD = "colorGrayBD"
     case gray19 = "colorGray19"
     case onMain = "colorOnMain"
+    case grayD6 = "colorGrayD6"
 }
 
 extension View{
