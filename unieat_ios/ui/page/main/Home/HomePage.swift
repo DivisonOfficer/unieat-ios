@@ -15,22 +15,13 @@ struct HomePage: View {
     var body: some View {
         VStack(spacing:0){
             appBar
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.bottom,18.dp)
-                .padding(.leading,20.dp)
-                .frame(height:103.dp, alignment: .bottom)
-                .background{
-                    Color(appbarDark ? .main : .white)
-                }
+                
             ScrollViewReader{
                 proxy in
                 ScrollView{
-                    VStack(){
-    
-                        
+                    VStack{
                         mapRedirect
                             .padding(.top,20.dp)
-                         
                         HomeBannerList()
                             .id("BannerList")
                             .background{
@@ -39,11 +30,11 @@ struct HomePage: View {
                             .padding(.top,150.dp)
                     }.frame(maxWidth: .infinity)
                         .background(
-                            GeometryReader {
-                                geometry in
-                                    Color.clear
-                                        .preference(key: ScrollOffsetPreferenceKey.self, value: geometry.frame(in: .named("scroll")).origin)
-                                        })
+                            GeometryReader {geometry in
+                                Color.clear
+                                    .preference(key: ScrollOffsetPreferenceKey.self, value: geometry.frame(in: .named("scroll")).origin)
+                            }
+                        )
                     .onPreferenceChange(ScrollOffsetPreferenceKey.self) { value in
                         if(appbarDark != (value.y > -100.dp)){
                             withAnimation{
@@ -64,8 +55,17 @@ struct HomePage: View {
         }.ignoresSafeArea()
     }
     
+    
+    
     var appBar: some View{
         Image(.icUnieatWordLogo)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.bottom,18.dp)
+            .padding(.leading,20.dp)
+            .frame(height:103.dp, alignment: .bottom)
+            .background{
+                Color(appbarDark ? .main : .white)
+            }
     }
     
     var mapRedirect: some View{

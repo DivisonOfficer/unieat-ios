@@ -47,6 +47,11 @@
 		58F6923D29FB8C9600E1A785 /* SLEIGothicOTF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 58F6923A29FB8AA300E1A785 /* SLEIGothicOTF.otf */; };
 		58F6923F29FB8E3E00E1A785 /* EventPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6923E29FB8E3E00E1A785 /* EventPageViewModel.swift */; };
 		58F6924129FB94F700E1A785 /* FoldedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924029FB94F700E1A785 /* FoldedBackground.swift */; };
+		58F6924329FE271800E1A785 /* MainPageRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924229FE271800E1A785 /* MainPageRoot.swift */; };
+		58F6924529FE275700E1A785 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924429FE275700E1A785 /* MainViewModel.swift */; };
+		58F6924729FE357600E1A785 /* MainArticlePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924629FE357600E1A785 /* MainArticlePage.swift */; };
+		58F6924A29FE367200E1A785 /* FrameSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924929FE367200E1A785 /* FrameSize.swift */; };
+		58F6924C29FE374E00E1A785 /* ArticleThumbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +114,11 @@
 		58F6923B29FB8C3900E1A785 /* SLEIGothicTTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SLEIGothicTTF.ttf; path = ../../../../../Downloads/SLEIGothicTTF.ttf; sourceTree = "<group>"; };
 		58F6923E29FB8E3E00E1A785 /* EventPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPageViewModel.swift; sourceTree = "<group>"; };
 		58F6924029FB94F700E1A785 /* FoldedBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldedBackground.swift; sourceTree = "<group>"; };
+		58F6924229FE271800E1A785 /* MainPageRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRoot.swift; sourceTree = "<group>"; };
+		58F6924429FE275700E1A785 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		58F6924629FE357600E1A785 /* MainArticlePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticlePage.swift; sourceTree = "<group>"; };
+		58F6924929FE367200E1A785 /* FrameSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSize.swift; sourceTree = "<group>"; };
+		58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleThumbData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				58F6923629FB891B00E1A785 /* EventData.swift */,
+				58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */,
 			);
 			path = dataclass;
 			sourceTree = "<group>";
@@ -261,6 +272,7 @@
 		58F691F229EF9BD400E1A785 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				58F6924829FE366700E1A785 /* debug */,
 				58F691F329EF9BEE00E1A785 /* di */,
 			);
 			path = utils;
@@ -281,6 +293,8 @@
 				58F6923329FAC4E300E1A785 /* Event */,
 				58F6922C29F7941900E1A785 /* Home */,
 				58F6920D29F25F1C00E1A785 /* NavigationMenu.swift */,
+				58F6924229FE271800E1A785 /* MainPageRoot.swift */,
+				58F6924429FE275700E1A785 /* MainViewModel.swift */,
 				58F6922729F3A3CF00E1A785 /* ShareMenuView.swift */,
 				58F6922929F3A81E00E1A785 /* Article */,
 				58F6921629F2E32500E1A785 /* ShopInfo */,
@@ -347,6 +361,7 @@
 			children = (
 				58F6922A29F3A82E00E1A785 /* ArticleThumb.swift */,
 				58F6923129F79B8B00E1A785 /* ArticleThumbGrid.swift */,
+				58F6924629FE357600E1A785 /* MainArticlePage.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -368,6 +383,14 @@
 				58F6923E29FB8E3E00E1A785 /* EventPageViewModel.swift */,
 			);
 			path = Event;
+			sourceTree = "<group>";
+		};
+		58F6924829FE366700E1A785 /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				58F6924929FE367200E1A785 /* FrameSize.swift */,
+			);
+			path = debug;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -518,6 +541,7 @@
 				58F6920829EFAADF00E1A785 /* Image.swift in Sources */,
 				58F6923F29FB8E3E00E1A785 /* EventPageViewModel.swift in Sources */,
 				58F6921129F25F6700E1A785 /* AppPage.swift in Sources */,
+				58F6924529FE275700E1A785 /* MainViewModel.swift in Sources */,
 				58F6922829F3A3CF00E1A785 /* ShareMenuView.swift in Sources */,
 				58F691BE29EF981A00E1A785 /* unieat_iosApp.swift in Sources */,
 				58F6922B29F3A82E00E1A785 /* ArticleThumb.swift in Sources */,
@@ -528,8 +552,12 @@
 				58F6920E29F25F1C00E1A785 /* NavigationMenu.swift in Sources */,
 				58F6923929FB8A3700E1A785 /* EventPage.swift in Sources */,
 				58F6920C29EFAFDA00E1A785 /* LoginButton.swift in Sources */,
+				58F6924A29FE367200E1A785 /* FrameSize.swift in Sources */,
 				58F691F529EF9BFF00E1A785 /* SingletoneProvider.swift in Sources */,
 				58F6921329F2DF9F00E1A785 /* ShopInfoPage.swift in Sources */,
+				58F6924329FE271800E1A785 /* MainPageRoot.swift in Sources */,
+				58F6924C29FE374E00E1A785 /* ArticleThumbData.swift in Sources */,
+				58F6924729FE357600E1A785 /* MainArticlePage.swift in Sources */,
 				58F6921B29F37D4500E1A785 /* HashTagBubble.swift in Sources */,
 				58F691FC29EF9F7000E1A785 /* LoginPage.swift in Sources */,
 				58F6923029F7976A00E1A785 /* HomeBannerList.swift in Sources */,

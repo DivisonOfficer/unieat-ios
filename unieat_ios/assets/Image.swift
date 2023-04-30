@@ -20,6 +20,12 @@ enum UniImage: String{
     case icWinnerTrophy
     case icStar
     case icListNull
+    case icMenuMap
+    case icMenuHome
+    case icMenuArticle
+    case icMenuMypage
+    case icMenuEvent
+    case icArticleAppbar
 }
 
 
