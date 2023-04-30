@@ -52,6 +52,8 @@
 		58F6924729FE357600E1A785 /* MainArticlePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924629FE357600E1A785 /* MainArticlePage.swift */; };
 		58F6924A29FE367200E1A785 /* FrameSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924929FE367200E1A785 /* FrameSize.swift */; };
 		58F6924C29FE374E00E1A785 /* ArticleThumbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */; };
+		58F6924E29FE443700E1A785 /* EventDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924D29FE443700E1A785 /* EventDetailPage.swift */; };
+		58F6925029FE47E700E1A785 /* Backbtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924F29FE47E700E1A785 /* Backbtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		58F6924629FE357600E1A785 /* MainArticlePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticlePage.swift; sourceTree = "<group>"; };
 		58F6924929FE367200E1A785 /* FrameSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameSize.swift; sourceTree = "<group>"; };
 		58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleThumbData.swift; sourceTree = "<group>"; };
+		58F6924D29FE443700E1A785 /* EventDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPage.swift; sourceTree = "<group>"; };
+		58F6924F29FE47E700E1A785 /* Backbtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backbtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -326,6 +330,7 @@
 				58F6921A29F37D4500E1A785 /* HashTagBubble.swift */,
 				58F6922529F39B1B00E1A785 /* PageIndicator.swift */,
 				58F6924029FB94F700E1A785 /* FoldedBackground.swift */,
+				58F6924F29FE47E700E1A785 /* Backbtn.swift */,
 			);
 			path = sharedcomponent;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				58F6923429FAC4F100E1A785 /* EventItemView.swift */,
 				58F6923829FB8A3700E1A785 /* EventPage.swift */,
 				58F6923E29FB8E3E00E1A785 /* EventPageViewModel.swift */,
+				58F6924D29FE443700E1A785 /* EventDetailPage.swift */,
 			);
 			path = Event;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F6924E29FE443700E1A785 /* EventDetailPage.swift in Sources */,
 				58F691C029EF981A00E1A785 /* ContentView.swift in Sources */,
 				58F6923229F79B8B00E1A785 /* ArticleThumbGrid.swift in Sources */,
 				58F6920829EFAADF00E1A785 /* Image.swift in Sources */,
@@ -564,6 +571,7 @@
 				58F691EE29EF98A400E1A785 /* Font.swift in Sources */,
 				58F6921529F2E22D00E1A785 /* ShopInfoViewModel.swift in Sources */,
 				58F6923529FAC4F100E1A785 /* EventItemView.swift in Sources */,
+				58F6925029FE47E700E1A785 /* Backbtn.swift in Sources */,
 				58F6922429F397A900E1A785 /* ViewExtension.swift in Sources */,
 				58F6921929F2E34200E1A785 /* ShopInfoComponent.swift in Sources */,
 				58F6922629F39B1B00E1A785 /* PageIndicator.swift in Sources */,

@@ -18,7 +18,9 @@ struct MainArticlePage: View {
     var body: some View {
         VStack{
             appbar
-            PagerView(articleThumbs: $articleThumbs)
+            ArticlePagerView(articleThumbs: $articleThumbs){
+                
+            }
         }
     }
     
@@ -52,21 +54,53 @@ struct MainArticlePage_Previews: PreviewProvider {
 }
 
 
-struct PagerView: View {
+struct ArticlePagerView: View {
     @Binding var articleThumbs: [ArticleThumbData]
     @State private var currentIndex = 0
     @StateObject var page: Page = .first()
     
+    let gotoMoreArticle: ()->Void
+    
     var body: some View {
         GeometryReader { geometry in
-            Pager(page: page, data: articleThumbs, id: \.title){
+            Pager(page: page, data: articleThumbs + [
+                ArticleThumbData(title: "end", tags: "end", imageUrl: "end")
+            ], id: \.title){
                 article in
-                ArticleThumb(thumbData: article)
+                if(article.title == "end"){
+                    moreArticle
+                }else{
+                    ArticleThumb(thumbData: article)
+                }
             }
             .singlePagination(ratio: 0.33, sensitivity: .custom(0.2))
                 .preferredItemSize(CGSize(width: geometry.size.width - 60.dp, height: geometry.size.height))
                 .interactive(scale: 0.9)
                 .itemSpacing(10)
         }
+    }
+    
+    var moreArticle: some View{
+        GeometryReader{
+            metric in
+            Button{
+                gotoMoreArticle()
+            }label:{
+                VStack{
+                    Text("더 많은\n아티클 보러가기")
+                        .fontSL(size: 24.sp)
+                        .foregroundColor(.sub)
+                    
+                    Image(.icArrowBtnSub)
+                }.frame(width: metric.size.width, height:metric.size.width * 4 / 3, alignment: .center)
+                
+                    .background{
+                        Color(.grayE2)
+                            .cornerRadius(4.dp)
+                    }
+                    .frame(height:metric.size.height, alignment: .center)
+            }
+        }
+            
     }
 }

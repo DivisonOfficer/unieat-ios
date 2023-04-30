@@ -26,6 +26,8 @@ enum UniImage: String{
     case icMenuMypage
     case icMenuEvent
     case icArticleAppbar
+    case icArrowBtnSub
+    case icBackbtn
 }
 
 
