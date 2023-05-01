@@ -58,16 +58,24 @@ struct EventDetailPage: View{
     
     
     var couponBtn: some View{
-        VStack{
-            Text("쿠폰 사용하기")
-                .font(.medium, 15.sp)
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity, maxHeight: 53.sp)
-                .background{
-                    RoundedRectangle(cornerRadius: 40.dp).foregroundColor(.primary)
-                }
-                .padding(.horizontal, 21.dp)
-                .padding(.top,16.dp)
+        let eventEabled = true
+        let eventStatus = "쿠폰 사용하기"//사용완료, 이벤트 종료, 인증 후 사용가능
+        
+        
+        return VStack{
+            Button{
+                
+            }label:{
+                Text(eventStatus)
+                    .font(.medium, 15.sp)
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity, maxHeight: 53.sp)
+                    .background{
+                        RoundedRectangle(cornerRadius: 40.dp).foregroundColor(eventEabled ? .main : .grayBD)
+                    }
+                    .padding(.horizontal, 21.dp)
+                    .padding(.top,16.dp)
+            }
             Spacer()
         }.frame(height:105.dp)
             .background{

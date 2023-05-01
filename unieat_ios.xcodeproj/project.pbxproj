@@ -54,6 +54,9 @@
 		58F6924C29FE374E00E1A785 /* ArticleThumbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */; };
 		58F6924E29FE443700E1A785 /* EventDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924D29FE443700E1A785 /* EventDetailPage.swift */; };
 		58F6925029FE47E700E1A785 /* Backbtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6924F29FE47E700E1A785 /* Backbtn.swift */; };
+		58F6925229FF785500E1A785 /* ArticleDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6925129FF785500E1A785 /* ArticleDetailPage.swift */; };
+		58F6925429FF789300E1A785 /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6925329FF789300E1A785 /* ArticleData.swift */; };
+		58F6925729FF819200E1A785 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 58F6925629FF819200E1A785 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +126,8 @@
 		58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleThumbData.swift; sourceTree = "<group>"; };
 		58F6924D29FE443700E1A785 /* EventDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailPage.swift; sourceTree = "<group>"; };
 		58F6924F29FE47E700E1A785 /* Backbtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backbtn.swift; sourceTree = "<group>"; };
+		58F6925129FF785500E1A785 /* ArticleDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPage.swift; sourceTree = "<group>"; };
+		58F6925329FF789300E1A785 /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F6922129F3963800E1A785 /* SwiftUIPager in Frameworks */,
+				58F6925729FF819200E1A785 /* Introspect in Frameworks */,
 				58F6921E29F395CB00E1A785 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +259,7 @@
 			children = (
 				58F6923629FB891B00E1A785 /* EventData.swift */,
 				58F6924B29FE374E00E1A785 /* ArticleThumbData.swift */,
+				58F6925329FF789300E1A785 /* ArticleData.swift */,
 			);
 			path = dataclass;
 			sourceTree = "<group>";
@@ -367,6 +374,7 @@
 				58F6922A29F3A82E00E1A785 /* ArticleThumb.swift */,
 				58F6923129F79B8B00E1A785 /* ArticleThumbGrid.swift */,
 				58F6924629FE357600E1A785 /* MainArticlePage.swift */,
+				58F6925129FF785500E1A785 /* ArticleDetailPage.swift */,
 			);
 			path = Article;
 			sourceTree = "<group>";
@@ -418,6 +426,7 @@
 			packageProductDependencies = (
 				58F6921D29F395CB00E1A785 /* Kingfisher */,
 				58F6922029F3963800E1A785 /* SwiftUIPager */,
+				58F6925629FF819200E1A785 /* Introspect */,
 			);
 			productName = unieat_ios;
 			productReference = 58F691BA29EF981A00E1A785 /* unieat_ios.app */;
@@ -494,6 +503,7 @@
 			packageReferences = (
 				58F6921C29F395CB00E1A785 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				58F6921F29F3963800E1A785 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+				58F6925529FF819200E1A785 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 58F691BB29EF981A00E1A785 /* Products */;
 			projectDirPath = "";
@@ -548,6 +558,7 @@
 				58F6920829EFAADF00E1A785 /* Image.swift in Sources */,
 				58F6923F29FB8E3E00E1A785 /* EventPageViewModel.swift in Sources */,
 				58F6921129F25F6700E1A785 /* AppPage.swift in Sources */,
+				58F6925229FF785500E1A785 /* ArticleDetailPage.swift in Sources */,
 				58F6924529FE275700E1A785 /* MainViewModel.swift in Sources */,
 				58F6922829F3A3CF00E1A785 /* ShareMenuView.swift in Sources */,
 				58F691BE29EF981A00E1A785 /* unieat_iosApp.swift in Sources */,
@@ -565,6 +576,7 @@
 				58F6924329FE271800E1A785 /* MainPageRoot.swift in Sources */,
 				58F6924C29FE374E00E1A785 /* ArticleThumbData.swift in Sources */,
 				58F6924729FE357600E1A785 /* MainArticlePage.swift in Sources */,
+				58F6925429FF789300E1A785 /* ArticleData.swift in Sources */,
 				58F6921B29F37D4500E1A785 /* HashTagBubble.swift in Sources */,
 				58F691FC29EF9F7000E1A785 /* LoginPage.swift in Sources */,
 				58F6923029F7976A00E1A785 /* HomeBannerList.swift in Sources */,
@@ -744,6 +756,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -774,6 +787,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -921,6 +935,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		58F6925529FF819200E1A785 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -933,6 +955,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 58F6921F29F3963800E1A785 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
 			productName = SwiftUIPager;
+		};
+		58F6925629FF819200E1A785 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F6925529FF819200E1A785 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
