@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct LoginPage: View {
+    
+    @StateObject var vm = LoginViewModel()
+    
     var body: some View {
         GeometryReader{
             metric in
@@ -62,11 +65,11 @@ struct LoginPage: View {
     var loginField: some View{
         VStack(spacing:13.dp){
             LoginButton(text: "카카오 로그인", icon: .icKakao, color: .kakao){
-                
+                vm.loginWithKakao()
             }
             
             LoginButton(text: "애플 로그인", icon: .icApple, color: .white){
-                
+                vm.loginWithApple()
             }
             
             

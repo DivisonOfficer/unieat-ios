@@ -57,6 +57,15 @@
 		58F6925229FF785500E1A785 /* ArticleDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6925129FF785500E1A785 /* ArticleDetailPage.swift */; };
 		58F6925429FF789300E1A785 /* ArticleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6925329FF789300E1A785 /* ArticleData.swift */; };
 		58F6925729FF819200E1A785 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 58F6925629FF819200E1A785 /* Introspect */; };
+		58F6925A2A0211A900E1A785 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 58F692592A0211A900E1A785 /* KakaoSDK */; };
+		58F6925C2A0211A900E1A785 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 58F6925B2A0211A900E1A785 /* KakaoSDKAuth */; };
+		58F6925E2A0211A900E1A785 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = 58F6925D2A0211A900E1A785 /* KakaoSDKUser */; };
+		58F692AB2A0214AC00E1A785 /* xcconfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F692AA2A0214AC00E1A785 /* xcconfig.swift */; };
+		58F692AE2A0218F000E1A785 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F692AD2A0218F000E1A785 /* LoginModule.swift */; };
+		58F692B22A021E3200E1A785 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F692B12A021E3200E1A785 /* Observable.swift */; };
+		58F692B52A021E6400E1A785 /* LoginStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F692B42A021E6400E1A785 /* LoginStatus.swift */; };
+		58F692B72A021EE100E1A785 /* LoginModuleImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F692B62A021EE100E1A785 /* LoginModuleImpl.swift */; };
+		58F692BB2A0220CF00E1A785 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F692BA2A0220CF00E1A785 /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +137,13 @@
 		58F6924F29FE47E700E1A785 /* Backbtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backbtn.swift; sourceTree = "<group>"; };
 		58F6925129FF785500E1A785 /* ArticleDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPage.swift; sourceTree = "<group>"; };
 		58F6925329FF789300E1A785 /* ArticleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleData.swift; sourceTree = "<group>"; };
+		58F692A92A0213A400E1A785 /* Debug.xxconfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xxconfig.xcconfig; sourceTree = "<group>"; };
+		58F692AA2A0214AC00E1A785 /* xcconfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcconfig.swift; sourceTree = "<group>"; };
+		58F692AD2A0218F000E1A785 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		58F692B12A021E3200E1A785 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		58F692B42A021E6400E1A785 /* LoginStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStatus.swift; sourceTree = "<group>"; };
+		58F692B62A021EE100E1A785 /* LoginModuleImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleImpl.swift; sourceTree = "<group>"; };
+		58F692BA2A0220CF00E1A785 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +152,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F6922129F3963800E1A785 /* SwiftUIPager in Frameworks */,
+				58F6925A2A0211A900E1A785 /* KakaoSDK in Frameworks */,
+				58F6925E2A0211A900E1A785 /* KakaoSDKUser in Frameworks */,
 				58F6925729FF819200E1A785 /* Introspect in Frameworks */,
 				58F6921E29F395CB00E1A785 /* Kingfisher in Frameworks */,
+				58F6925C2A0211A900E1A785 /* KakaoSDKAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +180,7 @@
 		58F691B129EF981A00E1A785 = {
 			isa = PBXGroup;
 			children = (
+				58F692A82A02138F00E1A785 /* xcconfig */,
 				58F691BC29EF981A00E1A785 /* unieat_ios */,
 				58F691CD29EF981C00E1A785 /* unieat_iosTests */,
 				58F691D729EF981C00E1A785 /* unieat_iosUITests */,
@@ -283,6 +303,8 @@
 		58F691F229EF9BD400E1A785 /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				58F692B02A021E1C00E1A785 /* rx */,
+				58F692AC2A0218E500E1A785 /* modules */,
 				58F6924829FE366700E1A785 /* debug */,
 				58F691F329EF9BEE00E1A785 /* di */,
 			);
@@ -317,6 +339,7 @@
 			isa = PBXGroup;
 			children = (
 				58F691FB29EF9F7000E1A785 /* LoginPage.swift */,
+				58F692BA2A0220CF00E1A785 /* LoginViewModel.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -345,6 +368,7 @@
 		58F6920F29F25F4200E1A785 /* enum */ = {
 			isa = PBXGroup;
 			children = (
+				58F692B32A021E5C00E1A785 /* user */,
 				58F6921029F25F6700E1A785 /* AppPage.swift */,
 			);
 			path = enum;
@@ -407,6 +431,48 @@
 			path = debug;
 			sourceTree = "<group>";
 		};
+		58F692A82A02138F00E1A785 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				58F692A92A0213A400E1A785 /* Debug.xxconfig.xcconfig */,
+				58F692AA2A0214AC00E1A785 /* xcconfig.swift */,
+			);
+			path = xcconfig;
+			sourceTree = "<group>";
+		};
+		58F692AC2A0218E500E1A785 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				58F692AF2A021DDB00E1A785 /* LoginModule */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		58F692AF2A021DDB00E1A785 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				58F692AD2A0218F000E1A785 /* LoginModule.swift */,
+				58F692B62A021EE100E1A785 /* LoginModuleImpl.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		58F692B02A021E1C00E1A785 /* rx */ = {
+			isa = PBXGroup;
+			children = (
+				58F692B12A021E3200E1A785 /* Observable.swift */,
+			);
+			path = rx;
+			sourceTree = "<group>";
+		};
+		58F692B32A021E5C00E1A785 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				58F692B42A021E6400E1A785 /* LoginStatus.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,6 +493,9 @@
 				58F6921D29F395CB00E1A785 /* Kingfisher */,
 				58F6922029F3963800E1A785 /* SwiftUIPager */,
 				58F6925629FF819200E1A785 /* Introspect */,
+				58F692592A0211A900E1A785 /* KakaoSDK */,
+				58F6925B2A0211A900E1A785 /* KakaoSDKAuth */,
+				58F6925D2A0211A900E1A785 /* KakaoSDKUser */,
 			);
 			productName = unieat_ios;
 			productReference = 58F691BA29EF981A00E1A785 /* unieat_ios.app */;
@@ -504,6 +573,7 @@
 				58F6921C29F395CB00E1A785 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				58F6921F29F3963800E1A785 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
 				58F6925529FF819200E1A785 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				58F692582A0211A900E1A785 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = 58F691BB29EF981A00E1A785 /* Products */;
 			projectDirPath = "";
@@ -566,13 +636,19 @@
 				58F6923729FB891B00E1A785 /* EventData.swift in Sources */,
 				58F691FE29EFA01D00E1A785 /* Color.swift in Sources */,
 				58F691F829EF9C1400E1A785 /* RootProvider.swift in Sources */,
+				58F692AE2A0218F000E1A785 /* LoginModule.swift in Sources */,
 				58F6924129FB94F700E1A785 /* FoldedBackground.swift in Sources */,
+				58F692B22A021E3200E1A785 /* Observable.swift in Sources */,
 				58F6920E29F25F1C00E1A785 /* NavigationMenu.swift in Sources */,
 				58F6923929FB8A3700E1A785 /* EventPage.swift in Sources */,
+				58F692B72A021EE100E1A785 /* LoginModuleImpl.swift in Sources */,
+				58F692BB2A0220CF00E1A785 /* LoginViewModel.swift in Sources */,
 				58F6920C29EFAFDA00E1A785 /* LoginButton.swift in Sources */,
 				58F6924A29FE367200E1A785 /* FrameSize.swift in Sources */,
 				58F691F529EF9BFF00E1A785 /* SingletoneProvider.swift in Sources */,
+				58F692AB2A0214AC00E1A785 /* xcconfig.swift in Sources */,
 				58F6921329F2DF9F00E1A785 /* ShopInfoPage.swift in Sources */,
+				58F692B52A021E6400E1A785 /* LoginStatus.swift in Sources */,
 				58F6924329FE271800E1A785 /* MainPageRoot.swift in Sources */,
 				58F6924C29FE374E00E1A785 /* ArticleThumbData.swift in Sources */,
 				58F6924729FE357600E1A785 /* MainArticlePage.swift in Sources */,
@@ -741,6 +817,7 @@
 		};
 		58F691DF29EF981C00E1A785 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58F692A92A0213A400E1A785 /* Debug.xxconfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -943,6 +1020,14 @@
 				minimumVersion = 0.2.3;
 			};
 		};
+		58F692582A0211A900E1A785 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -960,6 +1045,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 58F6925529FF819200E1A785 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		58F692592A0211A900E1A785 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F692582A0211A900E1A785 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		58F6925B2A0211A900E1A785 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F692582A0211A900E1A785 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		58F6925D2A0211A900E1A785 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58F692582A0211A900E1A785 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

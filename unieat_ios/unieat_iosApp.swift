@@ -6,12 +6,42 @@
 //
 
 import SwiftUI
+import KakaoSDKCommon
+import KakaoSDKAuth
+
+
 
 @main
 struct unieat_iosApp: App {
     var body: some Scene {
         WindowGroup {
-            MainPageRoot()
+            ContentView()
+                .onOpenURL{
+                    url in
+                    if(AuthApi.isKakaoTalkLoginUrl(url)){
+                        AuthController.handleOpenUrl(url: url)
+                    }
+                    
+                }
         }
     }
+    
+    
+    
+    init(){
+        initKakaoSDK()
+    }
+    
+    
+    
+    func initKakaoSDK(){
+        if let key = getConfig(.KAKAO_APP_KEY){
+            KakaoSDK.initSDK(appKey: key)
+        }else{
+            print("Config Not Loaded")
+        }
+    }
+    
+    
+    
 }

@@ -8,12 +8,20 @@
 import Foundation
 
 
+func provideSingleton<T: SingletoneInstance>() throws -> T{
+    return try! SingletoneProvider.instance.provide()
+}
+
+
 func provide<T>() throws -> T {
     
     
-    if(T.self is SingletoneInstance){
+    if (T.self is SingletoneInstance.Type){
+        
         return try! SingletoneProvider.instance.provide()
     }
+    
+    print("NO INSTANCE FOUND FOR \(T.self)")
     
     throw ProviderError.NoSuchInstance
 }

@@ -1,0 +1,17 @@
+//
+//  Debug.xxconfig.xcconfig
+//  unieat_ios
+//
+//  Created by 김진녕 on 2023/05/02.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+
+KAKAO_APP_KEY = 5fd54357215a25a942cfa3b7d999cacc
+
+BACKEND_URL = http:/$()/
+
+
